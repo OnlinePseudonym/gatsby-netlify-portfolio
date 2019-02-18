@@ -3,7 +3,7 @@ templateKey: 'index-page'
 title: 'Great coffee with a conscience'
 image: /img/home-jumbotron.jpg
 heading: I google stuff for a living!
-subheading: I try to fill in the time between google searches with coding websites and applications.
+subheading: I try to fill in the downtime between searches by coding websites and applications.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
