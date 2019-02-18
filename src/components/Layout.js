@@ -3,10 +3,12 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from '../components/layout/Navbar';
+import Header from '../components/layout/Header';
+import Footer from '../components/layout/Footer';
 
-import './all.sass';
+import './css/normalize.css';
+import './css/base.css';
 
 const Wrapper = styled.div`
   max-width: 1440px;
@@ -51,7 +53,8 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:image" content="/img/og-image.jpg" />
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
         </Helmet>
-        <Navbar />
+        {/* <Navbar /> */}
+        <Header />
         <div>{children}</div>
         <Footer />
       </Wrapper>
