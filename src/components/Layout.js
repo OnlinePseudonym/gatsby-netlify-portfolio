@@ -1,11 +1,23 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
+import styled from 'styled-components';
 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 import './all.sass';
+
+const Wrapper = styled.div`
+  max-width: 1440px;
+  margin: 0 auto;
+  box-shadow: 0 16px 48px #e7ebf6;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`;
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
@@ -20,7 +32,7 @@ const TemplateWrapper = ({ children }) => (
       }
     `}
     render={data => (
-      <div>
+      <Wrapper>
         <Helmet>
           <html lang="en" />
           <title>{data.site.siteMetadata.title}</title>
@@ -42,7 +54,7 @@ const TemplateWrapper = ({ children }) => (
         <Navbar />
         <div>{children}</div>
         <Footer />
-      </div>
+      </Wrapper>
     )}
   />
 );
