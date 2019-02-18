@@ -112,15 +112,19 @@ const Testimonials = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile {
-          edges {
-            node {
-              childImageSharp {
-                fluid(maxWidth: 720) {
-                  ...GatsbyImageSharpFluid
+        markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+          frontmatter {
+            testimonials {
+              author
+              quote
+              stars
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 720) {
+                    ...GatsbyImageSharpFluid
+                  }
                 }
               }
-              relativePath
             }
           }
         }
@@ -128,70 +132,24 @@ const Testimonials = () => (
     `}
     render={data => (
       <TestimonialSection className="container">
+        {console.log(data)}
         <div style={{ position: 'relative', paddingBottom: '4.8rem' }}>
           <TestimonialHeader>Testimonials</TestimonialHeader>
           <Wrapper>
-            <Testimonial>
-              <TestimonialInner>
-                <div>
-                  <TestimonialImg
-                    fluid={
-                      data.allFile.edges.filter(obj => {
-                        return obj.node.relativePath === 'ginger.jpg';
-                      })[0].node.childImageSharp.fluid
-                    }
-                  />
-                  <p style={{ marginBottom: '1.2rem' }}>
-                    Cute place but food was mediocre and needed salt badly. Wait staff were attentive and friendly. Bar
-                    area was cluttered and had too much going on to be relaxing. Recommendation: Put the server station
-                    on the other side.
-                  </p>
-                  <p style={{ marginBottom: '0', marginTop: '1.2rem' }}>2 Stars</p>
-                  <TestimonialAttribution>Ginger Norman</TestimonialAttribution>
-                </div>
-              </TestimonialInner>
-            </Testimonial>
-            <Testimonial>
-              <TestimonialInner>
-                <div>
-                  <TestimonialImg
-                    fluid={
-                      data.allFile.edges.filter(obj => {
-                        return obj.node.relativePath === 'matthew.jpg';
-                      })[0].node.childImageSharp.fluid
-                    }
-                  />
-                  <p style={{ marginBottom: '1.2rem' }}>
-                    This place is actually really good, I gave it one star I am trying to make these pizza ratings more
-                    realistic and Rosatis and Venezia's have the best pizza and for some reason they are rated lower
-                    than they should be-probabblly because they are more expensive and cheap people get angry about that
-                    but Rosatis and Venezia's are the best, Grimaldis is also really good but they don't deliver, I
-                    really like Florencia though- its my favorite pizza restaurant in Ahwatukee to eat at, but for
-                    delivery I go with Rosatis.
-                  </p>
-                  <p style={{ marginBottom: '0', marginTop: '1.2rem' }}>1 Star</p>
-                  <TestimonialAttribution>Matthew Boarman</TestimonialAttribution>
-                </div>
-              </TestimonialInner>
-            </Testimonial>
-            <Testimonial>
-              <TestimonialInner>
-                <div>
-                  <TestimonialImg
-                    fluid={
-                      data.allFile.edges.filter(obj => {
-                        return obj.node.relativePath === 'mi.jpg';
-                      })[0].node.childImageSharp.fluid
-                    }
-                  />
-                  <p style={{ marginBottom: '1.2rem' }}>
-                    Bruscheta and ceasar salad was good , pizza nothing special it can compete with little ceasars.
-                  </p>
-                  <p style={{ marginBottom: '0', marginTop: '1.2rem' }}>3 Stars</p>
-                  <TestimonialAttribution>Mi Ra</TestimonialAttribution>
-                </div>
-              </TestimonialInner>
-            </Testimonial>
+            {data.markdownRemark.frontmatter.testimonials.map(testimonial => {
+              return (
+                <Testimonial>
+                  <TestimonialInner>
+                    <div>
+                      <TestimonialImg fluid={testimonial.image.childImageSharp.fluid} />
+                      <p style={{ marginBottom: '1.2rem' }}>{testimonial.quote}</p>
+                      <p style={{ marginBottom: '0', marginTop: '1.2rem' }}>{testimonial.stars}</p>
+                      <TestimonialAttribution>{testimonial.author}</TestimonialAttribution>
+                    </div>
+                  </TestimonialInner>
+                </Testimonial>
+              );
+            })}
           </Wrapper>
         </div>
       </TestimonialSection>
@@ -200,21 +158,6 @@ const Testimonials = () => (
 );
 
 export default Testimonials;
-
-export const productPageQuery = graphql`
-  query {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-      frontmatter {
-        testimonials {
-          author
-          quote
-          stars
-          image
-        }
-      }
-    }
-  }
-`;
 
 /* import React from 'react'
 import PropTypes from 'prop-types'

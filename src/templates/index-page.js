@@ -7,11 +7,13 @@ import Features from '../components/Features';
 import BlogRoll from '../components/BlogRoll';
 import HomeHero from '../components/hero/homeHero';
 import Skills from '../components/Skills';
+import Testimonials from '../components/Testimonials';
 
 export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch, description, intro, main }) => (
   <div>
     <HomeHero />
     <Skills />
+    <Testimonials />
     <div
       className="full-width-image margin-top-0"
       style={{
