@@ -69,14 +69,31 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 testimonials:
-  - author: Elisabeth Kaurismäki
+  - author: Ginger Norman
+    image: /img/ginger.jpg
     quote: >-
-      The first time I tried Kaldi’s coffee, I couldn’t even believe that was
-      the same thing I’ve been drinking every morning.
-  - author: Philipp Trommler
+      Cute place but food was mediocre and needed salt badly. Wait staff were
+      attentive and friendly. Bar area was cluttered and had too much going on
+      to be relaxing. Recommendation: Put the server station on the other side.
+    stars: 2 Stars
+  - author: Matthew Boarman
+    image: /img/matthew.jpg
     quote: >-
-      Kaldi is the place to go if you want the best quality coffee. I love their
-      stance on empowering farmers and transparency.
+      This place is actually really good, I gave it one star  I am trying to
+      make these pizza ratings more realistic and Rosatis and Venezia's have the
+      best pizza and for some reason they are rated lower than they should
+      be-probabblly because they are more expensive and cheap people get angry
+      about that but Rosatis and Venezia's are the best, Grimaldis is also
+      really good but they don't deliver, I really like Florencia though- its my
+      favorite pizza restaurant in Ahwatukee to eat at, but for delivery I go
+      with Rosatis.
+    stars: 1 Star
+  - author: Mi Ra
+    image: /img/mi.jpg
+    quote: >-
+      Bruscheta and ceasar salad was good , pizza nothing special it can compete
+      with little ceasars.
+    stars: 3 Stars
 full_image: /img/products-full-width.jpg
 pricing:
   heading: Monthly subscriptions
