@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: I google stuff for a living!
-image: /img/home-jumbotron.jpg
+image: /img/monitors.png
 heading: I google stuff for a living!
 subheading: >-
   I try to fill in the downtime between searches by coding websites and
