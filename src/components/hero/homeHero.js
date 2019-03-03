@@ -40,7 +40,7 @@ const StyledImg = styled(Img)`
   height: auto;
   margin: 0 auto;
   overflow: visible;
-  transform: rotateY(-25deg);
+  transform: rotateY(-15deg);
   border: 2rem solid white;
   box-shadow: 0 0.8rem 2.4rem rgba(29, 43, 76, 0.12);
   right: 2.4rem;
@@ -100,7 +100,7 @@ const HomeHero = () => (
             </div>
             <Images>
               <HeroShapes />
-              <div style={{ perspective: '800px' }}>
+              <div style={{ perspective: '1000px' }}>
                 <StyledImg fluid={data.markdownRemark.frontmatter.image.childImageSharp.fluid} />
               </div>
             </Images>
