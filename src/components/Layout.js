@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 
-import Navbar from '../components/layout/Navbar';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 

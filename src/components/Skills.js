@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import cSharp from '../../static/img/C-Sharp-01.svg';
+
 const Wrapper = styled.div`
   padding-top: 4rem;
   padding-bottom: 4rem;
