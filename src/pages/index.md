@@ -1,22 +1,23 @@
 ---
-templateKey: 'index-page'
-title: 'Great coffee with a conscience'
+templateKey: index-page
+title: I google stuff for a living!
 image: /img/home-jumbotron.jpg
 heading: I google stuff for a living!
-subheading: I try to fill in the downtime between searches by coding websites and applications.
+subheading: >-
+  I try to fill in the downtime between searches by coding websites and
+  applications.
+mainpitch:
+  title: Why Kaldi
+  description: >
+    Kaldi is the coffee store for everyone who believes that great coffee
+    shouldn't just taste good, it should do good too. We source all of our beans
+    directly from small scale sustainable farmers and make sure part of the
+    profits are reinvested in their communities.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
   roasting and brewing seriously and we’re glad to pass that knowledge to
   anyone.
-mainpitch:
-  title: Why Kaldi
-  description: >
-    Kaldi is the coffee store for everyone who believes that
-    great coffee shouldn't just taste good, it should do good
-    too. We source all of our beans directly from small scale
-    sustainable farmers and make sure part of the profits are
-    reinvested in their communities.
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -94,33 +95,5 @@ testimonials:
       Bruscheta and ceasar salad was good , pizza nothing special it can compete
       with little ceasars.
     stars: 3 Stars
-full_image: /img/products-full-width.jpg
-pricing:
-  heading: Monthly subscriptions
-  description: >-
-    We make it easy to make great coffee a part of your life. Choose one of our
-    monthly subscription plans to receive great coffee at your doorstep each
-    month. Contact us about more details and payment info.
-  plans:
-    - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
-      items:
-        - 3 lbs of coffee per month
-        - Green or roasted beans"
-        - One or two varieties of beans"
-      plan: Small
-      price: '50'
-    - description: 'Great for avid drinkers, java-loving couples and bigger crowds'
-      items:
-        - 6 lbs of coffee per month
-        - Green or roasted beans
-        - Up to 4 different varieties of beans
-      plan: Big
-      price: '80'
-    - description: Want a few tiny batches from different varieties? Try our custom plan
-      items:
-        - Whatever you need
-        - Green or roasted beans
-        - Unlimited varieties
-      plan: Custom
-      price: '??'
 ---
+
