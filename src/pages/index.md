@@ -32,5 +32,24 @@ testimonials:
       Bruscheta and ceasar salad was good , pizza nothing special it can compete
       with little ceasars.
     stars: 3 Stars
+skills:
+  - altText: C Sharp Logo
+    image: >-
+      https://raw.githubusercontent.com/OnlinePseudonym/gatsby-netlify-portfolio/master/static/img/C-Sharp-01.svg?sanitize=true
+  - altText: JavaScript Logo
+    image: >-
+      https://raw.githubusercontent.com/OnlinePseudonym/gatsby-netlify-portfolio/master/static/img/javascript-js-seeklogo.com.svg?sanitize=true
+  - altText: HTML 5 Logo
+    image: >-
+      https://raw.githubusercontent.com/OnlinePseudonym/gatsby-netlify-portfolio/master/static/img/HTML5%20Logo%20Badge.svg?sanitize=true
+  - altText: CSS3 Logo
+    image: >-
+      https://raw.githubusercontent.com/OnlinePseudonym/gatsby-netlify-portfolio/master/static/img/CSS3_logo_and_wordmark.svg?sanitize=true
+  - altText: React Logo
+    image: >-
+      https://raw.githubusercontent.com/OnlinePseudonym/gatsby-netlify-portfolio/master/static/img/React-icon.svg?sanitize=true
+  - altText: Vue Logo
+    image: >-
+      https://raw.githubusercontent.com/OnlinePseudonym/gatsby-netlify-portfolio/master/static/img/Vue.js_Logo.svg?sanitize=true
 ---
 
