@@ -50,6 +50,22 @@ collections:
               fields:
                 [{ label: Image, name: image, widget: image }, { label: Alt Text, name: altText, widget: string }],
             }
+            {
+              label: 'Shape Colors',
+              name: 'shapeColors',
+              widget: object,
+              fields: [
+                {
+                  label: 'Foreground Blob',
+                  name: foregroundBlob,
+                  widget: object,
+                  fields: [
+                    { label: 'Top color', name: topColor, widget: color},
+                    { label: 'Bottom color', name: bottomColor, widget: color},
+                  ]
+                }
+              ]
+            }
       - file: 'src/pages/about/index.md'
         label: 'About'
         name: 'about'

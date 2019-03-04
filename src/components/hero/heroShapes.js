@@ -1,4 +1,5 @@
 import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -27,12 +28,12 @@ const HeroShapes = () => (
     <svg width="724" height="672" viewBox="0 0 724 672" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient x1="87.336%" y1="7.447%" x2="66.279%" y2="44.56%" id="hero-shapes-a">
-          <stop stop-color="#c56e10" offset="0%" />
-          <stop stop-color="#72471e" offset="100%" />
+          <stop stopColor="#c56e10" offset="0%" />
+          <stop stopColor="#72471e" offset="100%" />
         </linearGradient>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="hero-shapes-b">
-          <stop stop-color="#211305" offset="0%" />
-          <stop stop-color="#72471e" offset="100%" />
+          <stop stopColor="#211305" offset="0%" />
+          <stop stopColor="#72471e" offset="100%" />
         </linearGradient>
       </defs>
       <path

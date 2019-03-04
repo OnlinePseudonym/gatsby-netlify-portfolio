@@ -1,13 +1,6 @@
 import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import Image from 'gatsby-image';
-
-import cSharp from '../../static/img/C-Sharp-01.svg';
-import js from '../../static/img/javascript-js-seeklogo.com.svg';
-import html from '../../static/img/HTML5 Logo Badge.svg';
-import css from '../../static/img/CSS3_logo_and_wordmark.svg';
-import react from '../../static/img/React-icon.svg';
-import vue from '../../static/img/Vue.js_Logo.svg';
 
 const Wrapper = styled.div`
   padding-top: 4rem;
@@ -32,34 +25,55 @@ const SkillList = styled.ul`
   margin-bottom: 0;
   list-style: none;
   padding: 0;
-
-  @media (min-width: 641px) {
-    justify-content: space-around;
-  }
+  margin: 0;
+  justify-content: center;
 
   & li {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem 2rem;
     width: 100%;
-    padding: 1rem 0;
+    max-width: 12rem;
 
     @media (min-width: 641px) {
-      width: auto;
+      max-width: 18rem;
+      padding: 1rem 5rem;
     }
   }
 `;
 
 const Skills = () => (
-  <section className="container">
-    <Wrapper>
-      <div className="container-sm">
-        <SkillList>
-          <li />
-        </SkillList>
-      </div>
-    </Wrapper>
-  </section>
+  <StaticQuery
+    query={graphql`
+      query {
+        markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+          frontmatter {
+            skills {
+              altText
+              image
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
+      <section className="container">
+        {console.log(data)}
+        <Wrapper>
+          <div className="container-sm">
+            <SkillList>
+              {data.markdownRemark.frontmatter.skills.map((skill, i) => (
+                <li key={i}>
+                  <img src={skill.image} alt={skill.altText} />
+                </li>
+              ))}
+            </SkillList>
+          </div>
+        </Wrapper>
+      </section>
+    )}
+  />
 );
 
 export default Skills;
