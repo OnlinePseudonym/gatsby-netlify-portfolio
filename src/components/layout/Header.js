@@ -39,7 +39,7 @@ const HeaderLinks = styled.ul`
 
 const NavItem = styled.li`
   & a {
-    color: #042933;
+    color: #04415a;
     text-decoration: none;
   }
 `;
@@ -51,7 +51,7 @@ const BrandLogo = styled.div`
     font-family: Frank Ruhl Libre, serif;
     font-size: 4.8rem;
     font-weight: 700;
-    color: #269195;
+    color: #a113ec;
     text-decoration: none;
   }
 `;

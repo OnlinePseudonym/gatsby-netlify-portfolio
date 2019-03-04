@@ -44,6 +44,7 @@ const StyledImg = styled(Img)`
   border: 2rem solid white;
   box-shadow: 0 0.8rem 2.4rem rgba(29, 43, 76, 0.12);
   right: 2.4rem;
+  top: 3rem;
 
   @media (min-width: 641px) {
     max-width: none;
