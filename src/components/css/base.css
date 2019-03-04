@@ -18,6 +18,7 @@ body {
   font-family: Georgia, serif;
   margin: 0;
   background: #f7f6f5;
+  color: #04556d;
 }
 body,
 button,
@@ -61,7 +62,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: inherit;
+  color: #269195;
   font-family: Frank Ruhl Libre, serif;
   text-rendering: optimizeLegibility;
   font-weight: 700;
@@ -275,8 +276,8 @@ pre tt:after {
 .button-primary {
   color: #fff !important;
   transition: background 0.15s ease;
-  background: #ff9a29;
-  background: linear-gradient(65deg, #ff9a29 0, #b935ff 100%);
+  background: #359cff;
+  background: linear-gradient(65deg, #359cff 0, #b935ff 100%);
 }
 .button-shadow {
   position: relative;

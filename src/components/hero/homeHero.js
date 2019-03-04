@@ -61,7 +61,6 @@ const StyledImg = styled(Img)`
 
 const HeroCopy = styled.p`
   margin-bottom: 3.2rem;
-  color: #5b6a87;
   font-size: 2rem;
 `;
 
