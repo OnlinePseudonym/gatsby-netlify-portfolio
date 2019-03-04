@@ -53,13 +53,13 @@ skills:
       https://raw.githubusercontent.com/OnlinePseudonym/gatsby-netlify-portfolio/master/static/img/Vue.js_Logo.svg?sanitize=true
 shapeColors:
   backgroundBlob:
-    bottomColor: '#72471e'
-    topColor: '#c56e10'
+    bottomColor: '#2fd83d'
+    topColor: '#b935ff'
   foregroundBlob:
-    bottomColor: '#72471e'
-    topColor: '#211305'
+    bottomColor: '#359cff'
+    topColor: '#2fd83d'
   rectangle:
-    backgroundRectangle: '#425230'
-    outlineRectangle: '#a30000'
+    backgroundRectangle: '#ff9a29'
+    outlineRectangle: '#b935ff'
 ---
 
