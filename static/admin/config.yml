@@ -78,7 +78,7 @@ collections:
                   },
                   {
                     label: 'Rectangle',
-                    name: Rectange,
+                    name: rectangle,
                     widget: object,
                     fields:
                       [
