@@ -21,7 +21,7 @@ const Outer = styled.footer`
     left: 0;
     width: 100%;
     height: 300px;
-    background-image: url(data:image/svg+xml;utf8,%3Csvg%20width%3D%221440%22%20height%3D%22267%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M.338.842C167.455%2083.394%20647.342%2083.394%201440%20.842V267H.338C-166.78%207.01-166.78-81.71.338.842z%22%20fill%3D%22%23a113ec%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E);
+    background-image: url(data:image/svg+xml;utf8,%3Csvg%20width%3D%221440%22%20height%3D%22267%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M.338.842C167.455%2083.394%20647.342%2083.394%201440%20.842V267H.338C-166.78%207.01-166.78-81.71.338.842z%22%20fill%3D%22%2314788a%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E);
     background-size: 1440px 300px;
     background-repeat: no-repeat;
     @media (min-width: 641px) {
@@ -104,7 +104,8 @@ const Footer = ({ siteTitle }) => (
               textDecoration: 'none',
               fontSize: '3.6rem',
               fontWeight: '600',
-              fontFamily: 'Frank Ruhl Libre,serif'
+              fontFamily: 'Frank Ruhl Libre,serif',
+              color: '#ffffff'
             }}
           >
             KTR
@@ -115,7 +116,8 @@ const Footer = ({ siteTitle }) => (
             <Link
               to="/"
               style={{
-                textDecoration: 'none'
+                textDecoration: 'none',
+                color: '#ffffff'
               }}
             >
               Contact
@@ -125,7 +127,8 @@ const Footer = ({ siteTitle }) => (
             <Link
               to="/"
               style={{
-                textDecoration: 'none'
+                textDecoration: 'none',
+                color: '#ffffff'
               }}
             >
               About Us
@@ -135,7 +138,8 @@ const Footer = ({ siteTitle }) => (
             <Link
               to="/"
               style={{
-                textDecoration: 'none'
+                textDecoration: 'none',
+                color: '#ffffff'
               }}
             >
               FAQ's
@@ -145,7 +149,8 @@ const Footer = ({ siteTitle }) => (
             <Link
               to="/"
               style={{
-                textDecoration: 'none'
+                textDecoration: 'none',
+                color: '#ffffff'
               }}
             >
               Support
