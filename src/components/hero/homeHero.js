@@ -42,7 +42,7 @@ const StyledImg = styled(Img)`
   overflow: visible;
   transform: rotateY(-15deg);
   border: 2rem solid white;
-  box-shadow: 0 0.8rem 2.4rem rgba(29, 43, 76, 0.12);
+  box-shadow: 0 0.8rem 2.4rem rgba(120, 13, 254, 0.12);
   right: 2.4rem;
   top: 3rem;
 
@@ -89,7 +89,7 @@ const HomeHero = () => (
       <Wrapper>
         <div className="container">
           <Content>
-            <div>
+            <div style={{ paddingRight: '2rem' }}>
               <h1>{data.markdownRemark.frontmatter.heading}</h1>
               <HeroCopy>{data.markdownRemark.frontmatter.subheading}</HeroCopy>
               <p>
