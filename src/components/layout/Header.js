@@ -39,7 +39,7 @@ const HeaderLinks = styled.ul`
 
 const NavItem = styled.li`
   & a {
-    color: #1f2c3c;
+    color: #042933;
     text-decoration: none;
   }
 `;
