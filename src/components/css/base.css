@@ -275,8 +275,8 @@ pre tt:after {
 .button-primary {
   color: #fff !important;
   transition: background 0.15s ease;
-  background: #ff796a;
-  background: linear-gradient(65deg, #65725e 0, #425230 100%);
+  background: #ff9a29;
+  background: linear-gradient(65deg, #ff9a29 0, #b935ff 100%);
 }
 .button-shadow {
   position: relative;
