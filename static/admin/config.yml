@@ -66,6 +66,26 @@ collections:
                         { label: 'Bottom color', name: bottomColor, widget: color },
                       ],
                   },
+                  {
+                    label: 'Background Blob',
+                    name: backgroundBlob,
+                    widget: object,
+                    fields:
+                      [
+                        { label: 'Top color', name: topColor, widget: color },
+                        { label: 'Bottom color', name: bottomColor, widget: color },
+                      ],
+                  },
+                  {
+                    label: 'Rectangle',
+                    name: Rectange,
+                    widget: object,
+                    fields:
+                      [
+                        { label: 'Background Rectangle', name: backgroundRectangle, widget: color },
+                        { label: 'Outline Rectangle', name: outlineRectangle, widget: color },
+                      ],
+                  },
                 ],
             }
       - file: 'src/pages/about/index.md'
