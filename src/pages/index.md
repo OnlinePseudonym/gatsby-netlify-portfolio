@@ -17,7 +17,7 @@ testimonials:
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.
     headline: Lorem ipsum dolor
-    image: /img/CSS3_logo_and_wordmark.svg
+    image: /img/React-icon.svg
   - content: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -39,7 +39,7 @@ testimonials:
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat. 
     headline: Lorem ipsum dolor
-    image: /img/tutorials.png
+    image: /img/apple-touch-icon.png
 skills:
   - altText: C Sharp Logo
     image: >-
