@@ -6,32 +6,40 @@ heading: I google stuff for a living!
 subheading: >-
   I try to fill in the downtime between searches by coding websites and
   applications.
+sectionHeading: Skills
 testimonials:
-  - author: Ginger Norman
+  - content: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    headline: Lorem ipsum dolor
     image: /img/ginger.jpg
-    quote: >-
-      Cute place but food was mediocre and needed salt badly. Wait staff were
-      attentive and friendly. Bar area was cluttered and had too much going on
-      to be relaxing. Recommendation: Put the server station on the other side.
-    stars: 2 Stars
-  - author: Matthew Boarman
+  - content: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. 
+    headline: Lorem ipsum
     image: /img/matthew.jpg
-    quote: >-
-      This place is actually really good, I gave it one star  I am trying to
-      make these pizza ratings more realistic and Rosatis and Venezia's have the
-      best pizza and for some reason they are rated lower than they should
-      be-probabblly because they are more expensive and cheap people get angry
-      about that but Rosatis and Venezia's are the best, Grimaldis is also
-      really good but they don't deliver, I really like Florencia though- its my
-      favorite pizza restaurant in Ahwatukee to eat at, but for delivery I go
-      with Rosatis.
-    stars: 1 Star
-  - author: Mi Ra
+  - content: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. 
+    headline: Lorem ipsum dolor
     image: /img/mi.jpg
-    quote: >-
-      Bruscheta and ceasar salad was good , pizza nothing special it can compete
-      with little ceasars.
-    stars: 3 Stars
 skills:
   - altText: C Sharp Logo
     image: >-
