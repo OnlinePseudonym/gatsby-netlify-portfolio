@@ -8,7 +8,7 @@ const TESTIMONIAL_QUERY = graphql`
   query {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        sectionHeader
+        sectionHeading
         testimonials {
           headline
           content
