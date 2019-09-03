@@ -17,7 +17,7 @@ testimonials:
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.
     headline: Lorem ipsum dolor
-    image: /img/ginger.jpg
+    image: /img/C-Sharp-01.svg
   - content: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -32,14 +32,14 @@ testimonials:
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat. 
     headline: Lorem ipsum
-    image: /img/matthew.jpg
+    image: /img/javascript-js-seeklogo.com.svg
   - content: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat. 
     headline: Lorem ipsum dolor
-    image: /img/mi.jpg
+    image: /img/tutorials.png
 skills:
   - altText: C Sharp Logo
     image: >-
