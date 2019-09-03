@@ -85,29 +85,34 @@ const HomeHero = () => (
         }
       }
     `}
-    render={data => (
-      <Wrapper>
-        <div className="container">
-          <Content>
-            <div style={{ paddingRight: '2rem' }}>
-              <h1>{data.markdownRemark.frontmatter.heading}</h1>
-              <HeroCopy>{data.markdownRemark.frontmatter.subheading}</HeroCopy>
-              <p>
-                <Link className="button button-primary button-shadow" to="/">
-                  Some CTA text
-                </Link>
-              </p>
-            </div>
-            <Images>
-              <HeroShapes />
-              <div style={{ perspective: '1000px' }}>
-                <StyledImg fluid={data.markdownRemark.frontmatter.image.childImageSharp.fluid} />
+    render={data => {
+      const frontmatter = data.markdownRemark.frontmatter;
+      console.log(frontmatter);
+      
+      return (
+        <Wrapper>
+          <div className="container">
+            <Content>
+              <div style={{ paddingRight: '2rem' }}>
+                <h1>{frontmatter.heading}</h1>
+                <HeroCopy>{frontmatter.subheading}</HeroCopy>
+                <p>
+                  <Link className="button button-primary button-shadow" to="/">
+                    Some CTA text
+                  </Link>
+                </p>
               </div>
-            </Images>
-          </Content>
-        </div>
-      </Wrapper>
-    )}
+              <Images>
+                <HeroShapes />
+                <div style={{ perspective: '1000px' }}>
+                  <StyledImg fluid={frontmatter.image.childImageSharp.fluid} />
+                </div>
+              </Images>
+            </Content>
+          </div>
+        </Wrapper>
+      )
+    }}
   />
 );
 

@@ -18,6 +18,8 @@ const TESTIMONIAL_QUERY = graphql`
                 ...GatsbyImageSharpFluid
               }
             }
+            extension
+            publicURL
           }
         }
       }
@@ -121,8 +123,13 @@ const TestimonialImg = styled(Img)`
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.6rem;
-  border-radius: 50%;
-  box-shadow: 0 1.6rem 2.4rem #ece7e3;
+`;
+const TestimonialSvg = styled.img`
+  width: 56px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.6rem;
 `;
 const TestimonialAttribution = styled.div`
   font-weight: 600;
@@ -141,12 +148,18 @@ const Testimonials = () => (
           <TestimonialHeader>{data.markdownRemark.frontmatter.sectionHeading}</TestimonialHeader>
           <Wrapper>
             {data.markdownRemark.frontmatter.testimonials.map((testimonial, i) => {
+              const image = testimonial.image;
+              const isSvg = !image.childImageSharp && image.extension === 'svg'
               return (
                 <Testimonial key={i}>
                   <TestimonialInner>
                     <div>
                       <TestimonialAttribution>{testimonial.headline}</TestimonialAttribution>
-                      <TestimonialImg fluid={testimonial.image.childImageSharp.fluid} />
+                      {
+                        isSvg ?
+                        <TestimonialSvg src={image.publicURL} /> :
+                        <TestimonialImg fluid={testimonial.image.childImageSharp.fluid} />
+                      }
                       <p style={{ marginBottom: '1.2rem' }}>{testimonial.content}</p>
                     </div>
                   </TestimonialInner>
