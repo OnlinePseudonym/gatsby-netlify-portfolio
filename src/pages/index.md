@@ -17,7 +17,7 @@ testimonials:
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.
     headline: Lorem ipsum dolor
-    image: /img/C-Sharp-01.svg
+    image: /img/CSS3_logo_and_wordmark.svg
   - content: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
