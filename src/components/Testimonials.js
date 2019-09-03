@@ -16,7 +16,7 @@ const TESTIMONIAL_QUERY = graphql`
             childImageSharp {
               fluid(maxWidth: 720) {
                 ...GatsbyImageSharpFluid
-              }
+              } 
             }
           }
         }
