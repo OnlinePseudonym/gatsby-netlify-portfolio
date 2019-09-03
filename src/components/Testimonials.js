@@ -8,12 +8,15 @@ const TESTIMONIAL_QUERY = graphql`
   query {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
+        sectionHeading
         testimonials {
+          headline
+          content
           image {
             childImageSharp {
               fluid(maxWidth: 720) {
                 ...GatsbyImageSharpFluid
-              } 
+              }
             }
           }
         }
@@ -135,7 +138,7 @@ const Testimonials = () => (
       <TestimonialSection className="container">
         {console.log(data)}
         <div style={{ position: 'relative', paddingBottom: '4.8rem' }}>
-          <TestimonialHeader>Testimonials</TestimonialHeader>
+          <TestimonialHeader>{data.markdownRemark.frontmatter.sectionHeading}</TestimonialHeader>
           <Wrapper>
             {data.markdownRemark.frontmatter.testimonials.map((testimonial, i) => {
               return (
