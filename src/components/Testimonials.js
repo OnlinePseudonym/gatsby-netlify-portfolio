@@ -8,10 +8,7 @@ const TESTIMONIAL_QUERY = graphql`
   query {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        sectionHeading
         testimonials {
-          headline
-          content
           image {
             childImageSharp {
               fluid(maxWidth: 720) {
