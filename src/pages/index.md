@@ -38,7 +38,7 @@ testimonials:
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat. 
-    headline: Lorem ipsum dolor
+    headline: 'Lorem ipsum dolor, Sit Amet'
     image: /img/apple-touch-icon.png
 skills:
   - altText: C Sharp Logo
@@ -69,5 +69,11 @@ shapeColors:
   rectangle:
     backgroundRectangle: '#ff9a29'
     outlineRectangle: '#b935ff'
+footer:
+  footerBrand:
+    footerBrandText: KTR
+  socialLinks:
+    githubUrl: 'https://github.com/OnlinePseudonym'
+    linkedinUrl: 'https://www.linkedin.com/in/kevin-reynolds-40b625148'
 ---
 
