@@ -160,7 +160,7 @@ const Testimonials = () => (
                         <TestimonialSvg src={image.publicURL} /> :
                         <TestimonialImg fluid={testimonial.image.childImageSharp.fluid} />
                       }
-                      <p style={{ marginBottom: '1.2rem' }}>{testimonial.content}</p>
+                      <p style={{ marginBottom: '1.2rem' }}>{testimonial.content}asdf</p>
                     </div>
                   </TestimonialInner>
                 </Testimonial>

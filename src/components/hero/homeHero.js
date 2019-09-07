@@ -87,7 +87,6 @@ const HomeHero = () => (
     `}
     render={data => {
       const frontmatter = data.markdownRemark.frontmatter;
-      console.log(frontmatter);
       
       return (
         <Wrapper>

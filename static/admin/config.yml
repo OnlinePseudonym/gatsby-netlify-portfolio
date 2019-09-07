@@ -88,6 +88,31 @@ collections:
                   },
                 ],
             }
+          - {
+              label: Footer,
+              name: footer,
+              widget: object,
+              fields: [
+                {
+                  label: 'Footer Brand',
+                  name: footerBrand,
+                  widget: object,
+                  fields: [
+                    { label: 'Footer Brand Text', name: footerBrandText, widget: string, required: false },
+                    { label: 'Footer logo', name: footerLogo, widget: image, required: false }
+                  ]
+                },
+                {
+                  label: 'Social Links',
+                  name: socialLinks,
+                  widget: object,
+                  fields: [
+                    { label: 'GitHub Url', name: githubUrl, widget: string, required: false },
+                    { label: 'LinkedIn Url', name: linkedinUrl, widget: string, required: false }
+                  ]
+                }
+              ]
+            }
       - file: 'src/pages/about/index.md'
         label: 'About'
         name: 'about'
