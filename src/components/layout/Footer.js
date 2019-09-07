@@ -65,7 +65,7 @@ const FooterSocial = styled.ul`
   margin-left: 0;
   list-style: none;
 
-  $ a, a:visited, a:active {
+  & a, a:visited, a:active {
     color: inherit;
   }
   & li {
